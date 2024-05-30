@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arngren - Dynamic Picture Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Arngren</div>
+        <div class="navbar-menu">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="gallery-container">
+        <button class="arrow left-arrow" onclick="prevImage()">&#9664;</button>
+        <div class="image-wrapper">
+            <img id="gallery-image" src="image1.jpg" alt="Gallery Image">
+            <div class="image-details">
+                <h2 id="image-title">Title 1</h2>
+                <p id="image-description">Description of the first image.</p>
+                <p id="image-price">$100</p>
+                <span class="badge discount-badge">10% OFF</span>
+            </div>
+        </div>
+        <button class="arrow right-arrow" onclick="nextImage()">&#9654;</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

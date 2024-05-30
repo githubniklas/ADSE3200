@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 70px;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row; 
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 20px;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#image-title {
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+}
+
+#image-description {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+#image-price {
+    font-size: 1.2rem;
+    color: #d9534f;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: white;
+    background-color: #d9534f;
+    border-radius: 3px;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arrow {
+        font-size: 1.5rem;
+    }
+
+    .image-wrapper {
+        margin: 10px 0; 
+    }
+
+    #image-title {
+        font-size: 1.2rem;
+    }
+
+    #image-description {
+        font-size: 0.9rem;
+    }
+
+    #image-price {
+        font-size: 1rem; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .gallery-container {
+        max-width: 90%; 
+    }
+}
