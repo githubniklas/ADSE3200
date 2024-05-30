@@ -6,9 +6,9 @@ body {
 
 .navbar {
     width: 100%;
-    background-color: #333;
+    background-color: #1ab422;
     padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(19, 255, 19, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -2,21 +2,21 @@ const images = [
     {
         src: 'moped1.jpg',
         title: 'moped 1',
-        description: 'MOPEEEED',
+        description: 'Moped for sale',
         price: '$100',
         discount: '10% OFF'
     },
     {
         src: 'moped2.jpg',
         title: 'moped 2',
-        description: 'moped for saaale sale',
+        description: 'Very quick moped for sale',
         price: '$200',
         discount: '15% OFF'
     },
     {
         src: 'moped3.jpg',
         title: 'moped 3',
-        description: 'yes moped moped',
+        description: 'Fastest moped ever for sale',
         price: '$300',
         discount: '20% OFF'
     }
